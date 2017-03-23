@@ -1,0 +1,30 @@
+.indexContainer {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.tabbars {
+    border-top: 1px solid #ddd;
+    background: #fcfcfc;
+    position: absolute;
+    bottom: 0;
+    padding: 5px 0;
+    font-size: 12px;
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+.tabbars>a {
+    width: 100%;
+}
+
+.tabbarIcon {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.tabbars>.active {
+    color: #f24c38;
+}
