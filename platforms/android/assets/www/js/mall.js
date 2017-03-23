@@ -1,7 +1,3 @@
-var mallModule = app
-console.log(mallModule);
-mallModule.register.controller('mallCtrl',['$scope','$rootScope',function($scope,$rootScope){
-  console.log($scope);
+indexApp.register.controller('mallCtrl',['$scope','$rootScope',function($scope,$rootScope){
   $scope.name = "aaaa"
-  console.log($rootScope.user);
 }])

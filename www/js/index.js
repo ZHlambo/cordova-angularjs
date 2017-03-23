@@ -20,14 +20,34 @@ indexApp.config(['$stateProvider', '$urlRouterProvider', '$controllerProvider', 
                 filter: $filterProvider.register,
                 directive: $compileProvider.directive
             };
-            $urlRouterProvider.when("", "/root");
+            $urlRouterProvider.when("", "root/home");
             $stateProvider
                 .state('root', {　　　　　　　　　　　　 //路由匹配规则
                     url: '/root',
                     templateUrl: "/root.html",
                     resolve: resolveController(['js/root'])
                 })
-            $urlRouterProvider.otherwise('/root'); //没有配置的状态就可以跳到 ‘/index’状态
+                .state('root.home', {　　　　　　　　　　　　 //路由匹配规则
+                    url: '/home',
+                    templateUrl: "/home.html",
+                    resolve: resolveController(['js/home'])
+                })
+                .state('root.mall', {　　　　　　　　　　　　 //路由匹配规则
+                    url: '/mall',
+                    templateUrl: "/mall.html",
+                    resolve: resolveController(['js/mall'])
+                })
+                .state('root.shopping', {　　　　　　　　　　　　 //路由匹配规则
+                    url: '/shopping',
+                    templateUrl: "/shopping.html",
+                    resolve: resolveController(['js/shopping'])
+                })
+                .state('root.personal', {　　　　　　　　　　　　 //路由匹配规则
+                    url: '/personal',
+                    templateUrl: "/personal.html",
+                    resolve: resolveController(['js/personal'])
+                })
+            $urlRouterProvider.otherwise('root/personal'); //没有配置的状态就可以跳到 ‘/index’状态
         }
     ])
     //

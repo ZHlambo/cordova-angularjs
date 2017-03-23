@@ -1,6 +1,3 @@
-var shoppingModule = app
-console.log(shoppingModule);
-shoppingModule.register.controller('shoppingCtrl',['$scope',function($scope){
-  console.log($scope);
+indexApp.register.controller('shoppingCtrl',['$scope',function($scope){
   $scope.name = "aaaa"
 }])

@@ -1,13 +1,15 @@
 <script src="/js/root.js"></script>
 
-<div ng-controller="rootCtrl" class="app" style="height:{{innerHeight}}px">asdfas
-    <div ng-view class="indexContainer" style="height:calc(100% - 60px)"></div>
-    <div class="tabbars">
-        <a ng-repeat="tabbar in tabbars" ng-class="{'active':tabbar.key===tabbar_on}" ng-click="changeTab(tabbar.key)">
-            <div class="tabbarIcon">
-                <i class="{{tabbar.icon}}"></i>
-            </div>
-            {{tabbar.name}}
-        </a>
+<div >
+    <div ng-controller="rootCtrl" class="app" style="height:{{innerHeight}}px">
+        <div class="fad" ui-view class="indexContainer" style="height:calc(100% - 60px)"></div>
+        <div class="tabbars">
+            <a ng-repeat="tabbar in tabbars" ui-sref=".{{tabbar.key}}" ng-class="{'active':tabbar.key===tabbar_on}" ng-click="changeTab(tabbar.key)">
+                <div class="tabbarIcon">
+                    <i class="{{tabbar.icon}}"></i>
+                </div>
+                {{tabbar.name}}
+            </a>
+        </div>
     </div>
 </div>
