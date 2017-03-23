@@ -1,7 +1,14 @@
+.bodyContainer {
+    height: 100%;
+}
+.bodyContainer>div {
+    height: 100%;
+}
+
 .indexContainer {
     overflow: auto;
-    height: 100%;
     width: 100%;
+    background-color: #f4f4f4;
 }
 
 .tabbars {
@@ -22,7 +29,6 @@
 
 .tabbarIcon {
     font-size: 20px;
-    padding: 5px;
 }
 
 .tabbars>.active {

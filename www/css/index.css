@@ -1,3 +1,10 @@
+.bodyContainer {
+    height: 100%;
+}
+.bodyContainer>div {
+    height: 100%;
+}
+
 .indexContainer {
     overflow: auto;
     width: 100%;

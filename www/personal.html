@@ -1,15 +1,39 @@
-<link rel="css/personal" href="/css/master.css">
-<div ng-controller="personalCtrl" class="">
+<link href="/css/personal.css" rel="stylesheet">
+<script src="/js/personal.js"></script>
+<div ng-controller="personalCtrl">
     <div class="border">
+        <div class="header">
+            <img src={{user.headerimg}} alt="">
+            <span>
+          登录/注册
+        </span>
+            <div class="detail"> </div>
+        </div>
     </div>
     <div class="border">
+        <div>
+            <i class="fa fa-yen"></i> 账户余额
+            <div class="detail"> </div>
+        </div>
     </div>
     <div class="border">
-        <div class="">
-          <i class="fa fa-shopping-bag"></i>
-          我的订单</div>
-        <div class="">我的地址</div>
-        <div class="">收藏列表</div>
+        <div>
+            <i class="fa fa-shopping-bag"></i> 我的订单
+            <div class="detail"> </div>
+        </div>
+        <div>
+            <i class="fa fa-map"></i> 我的地址
+            <div class="detail"> </div>
+        </div>
+        <div>
+            <i class="fa fa-heart"></i> 收藏列表
+            <div class="detail"> </div>
+        </div>
     </div>
-    <div class="border">联系我们</div>
+    <div class="border">
+        <div>
+            <i class="fa fa-phone"></i> 联系我们
+            <div class="detail"> </div>
+        </div>
+    </div>
 </div>

@@ -1,13 +1,49 @@
 .border {
+    background: white;
+    margin-top: 20px;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     padding-left: 20px;
+    line-height: 40px;
 }
 
 .border>div {
     border-bottom: 1px solid #ddd;
+    height: 40px;
+}
+
+.border>div>i {
+    color: #f24c38;
 }
 
 .border>div:last-child {
     border-bottom: 0 solid #ddd;
+}
+
+.header {
+    height: 80px!important;
+    line-height: 80px!important;
+}
+
+.header>img {
+    float: left;
+    margin: 10px 10px 0 -10px;
+    width: 60px;
+    height: 60px;
+}
+
+.detail {
+    content: " ";
+    display: inline-block;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 6px;
+    width: 6px;
+    border: 0 solid #c8c8cd;
+    border-width: 2px 2px 0 0;
+    position: relative;
+    margin-left: .3em;
+    float: right;
+    top: calc((100% - 6px) / 2);
+    right: 20px;
 }
